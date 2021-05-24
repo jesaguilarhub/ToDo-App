@@ -14,13 +14,9 @@ const CreateTodo = ({ handleCreate }) => {
 		<form onSubmit={handleSubmit(onSubmit, (e) => alert(e))}>
 			<div>
 				<TextField id="task" label="Task" {...register('task', { required: true })} />
-				{/* <label htmlFor="task">Task: </label>
-				<input type="text" id="task" {...register('task', { required: true })} /> */}
 			</div>
 			<div>
 				<TextField id="student" label="Student" {...register('student', { required: true })} />
-				{/* <label htmlFor="student">Student:</label>
-				<input type="text" id="student" {...register('student', { required: true })} /> */}
 			</div>
 			<Button type="submit" variant="contained" color="default" startIcon={<CloudUploadIcon />}>
 				Upload
