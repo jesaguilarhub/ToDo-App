@@ -12,6 +12,7 @@ const CreateTodo = ({ handleCreate }) => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit, (e) => alert(e))}>
+			<h2>Add To-Do</h2>
 			<div>
 				<TextField id="task" label="Task" {...register('task', { required: true })} />
 			</div>

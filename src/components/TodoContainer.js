@@ -122,9 +122,9 @@ const TodoContainer = () => {
 			) : (
 			<>
 				<CreateTodo handleCreate={handleCreate} />
-				<div>
-				<ul>{list}</ul>
-				</div>
+				
+				<ul style={{display:'flex', flexWrap: 'wrap'}}>{list}</ul>
+				
 			</>
 			)}
 			
